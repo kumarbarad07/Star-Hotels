@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;    
+}
+
+body {
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img,
+video {
+    object-fit: cover;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.9s ease;
+}
+
+.unorder {
+    line-height: 60px;
+}
+
+.menubar i {
+    font-size: 30px;
+}
+
+.ab {
+    height: 20px;
+}
+
+.offer-para {
+    font-size: 12px;
+}
+
+.book-now {
+    color: rgb(255, 255, 255);
+    background-color: #FFC107;
+}
+
+.book-now:hover {
+    color: #ff9307;
+    background-color: rgb(233, 224, 206);
+}
+
+.e-rooms {
+    cursor: pointer
+}
+
+.s-rooms:hover {
+    font-weight: 500;
+}
+
+.e-rooms:hover {
+    font-weight: 500;
+}
+
+.k-suites:hover {
+    font-weight: 500;
+}
+
+.view-more {
+    color: #FFC107;
+    background: transparent;
+}
+
+.view-more:hover {
+    color: #ffffff;
+    background-color: #FFC107;
+}
+
+.footer-section {
+    background-color: #241E09;
+}
+
+.star-hotel {
+    width: 200px;
+}

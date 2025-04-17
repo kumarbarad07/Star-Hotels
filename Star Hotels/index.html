@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Template of Hotel">
+    <meta name="keywords" content="Star-Hotel Template">
+    <title>Star Hotels</title>
+    <link rel="icon" href="./images/title-logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <script>
+        // Fade in on load
+        window.onload = () => {
+          document.body.style.opacity = "1";
+        };
+      </script>
+</head>
+
+<body>
+
+    <!-- Header Section-->
+    <header>
+        <section class="container">
+            <div class="d-flex top-navbar justify-content-between justify-content-lg-between pt-2">
+                <div class="main-logo">
+                    <img src="./images/star_hotels_logo.png" alt="">
+                </div>
+                <div class="d-lg-none menubar py-3">
+                    <a class="text-warning fs-5" href="" data-bs-target="#navbarlist" data-bs-toggle="offcanvas">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <div class="offcanvas offcanvas-top h-100 bg-white" id="navbarlist">
+                    <div class="offcanvas-header">
+                        <img src="./images/star_hotels_logo.png" alt="">
+                        <button type="button" class="btn-close text-warning" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body mx-auto p-5">
+                        <nav>
+                            <ul class="unorder text-center">
+                                <li><a class="text-decoration-none text-dark text-warning" href=""><span
+                                            class="text-warning fs-5">Home</span></a></li>
+                                <li><a class="text-decoration-none text-dark fs-5" href="./rooms-and-suites.html">Rooms and Suites</a></li>
+                                <li><a class="text-decoration-none text-dark fs-5" href="./facilities.html">Facilities</a></li>
+                                <li><a class="text-decoration-none text-dark fs-5" href="./contact-page.html">Contact Us</a></li>
+                                <li><a href="https://www.goibibo.com/hotels/hotels-in-kolhapur-ct/"
+                                        class="book-now text-decoration-none px-4 py-2 rounded-2">Book
+                                        Now</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="d-none d-lg-flex">
+                    <nav>
+                        <ul class="d-flex column-gap-5 text-center lh-lg pt-3">
+                            <li><a class="text-decoration-none text-warning" href=""><span
+                                        class="text-warning">Home</span></a></li>
+                            <li><a class="text-decoration-none text-dark" href="./rooms-and-suites.html">Rooms and Suites</a></li>
+                            <li><a class="text-decoration-none text-dark" href="./facilities.html">Facilities</a></li>
+                            <li><a class="text-decoration-none text-dark" href="./contact-page.html">Contact Us</a></li>
+                            <li><a href="https://www.goibibo.com/hotels/hotels-in-kolhapur-ct/" class="book-now text-decoration-none px-4 py-2 rounded-2">Book
+                                    Now</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+        <!-- Hero Section-->
+        <section class="hero-section">
+            <div class="hero-container img-fluid">
+                <div class="container pt-3 pt-lg-5 pb-5 mb-5">
+                    <div class="row pt-lg-5 mx-lg-3 my-5 text-white">
+                        <div class="col-12 col-md-7 d-flex align-self-center mb-3">
+                            <div class="container ">
+                                <div class="text-center text-lg-start">
+                                    <h2 class="fw-bold text-capitalize pb-2">Discover the perfect balance
+                                        of hospitality, luxury and
+                                        comfort.</h2>
+                                    <p>We are focused on providing clients with the highest level
+                                        of comfort and excellent affordable rates</p>
+                                    <button type="button"
+                                        class="rounded-2 px-4 py-2 border border-0 book-now">BOOK
+                                        NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <div class="container">
+                                <div class="bg-white rounded-2 text-black pt-5 text-center pb-3">
+                                    <h3 class="fw-bold">Scared you can't afford it?</h3>
+                                    <p>Don't worry, our hotel offers the best
+                                        affordable rates you can ever find.</p>
+                                    <form action="" method="post">
+                                        <div class="mx-5">
+                                            <div class="mb-3 border border-black">
+                                                <input type="date" placeholder="Arrival Date" class="form-control" />
+                                            </div>
+                                            <div class="mb-3 border border-black">
+                                                <input type="date" placeholder="Daparture Date" class="form-control" />
+                                            </div>
+                                            <div class="mb-3 border border-black">
+                                                <input type="text" placeholder="Guests" class="form-control">
+                                            </div>
+                                            <div class="mb-3 border border-black">
+                                                <input type="text" placeholder="Childre" class="form-control">
+                                            </div>
+                                            <div>
+                                                <button type="button"
+                                                    class="bg-warning text-white form-control rounded-2 border border-0">CHECK
+                                                    RATES</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Facility Section-->
+        <section class="enjoy-stay mt-5">
+            <div class="container px-5 pb-5">
+                <div class="row">
+                    <div class="col-12 col-md-5 pb-3">
+                        <div class="container text-center text-lg-start">
+                            <h2 class="fw-bold fs-1">Enjoy your stay
+                                at our hotel</h2>
+                            <hr class="text-warning w-25">
+                            <p class="fw-medium">We are more than being a hotel because we are able <br>
+                                to combine the quality standard of a hotel with the <br>
+                                advantages of an apartment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row text-center px-lg-3">
+                        <div class="col-12 col-md-6">
+                            <div class="row text-center text-lg-start">
+                                <div class="col-12 col-md-6">
+                                    <div>
+                                        <span><img src="./images/clock.svg" class="img-fluid" alt=""></span>
+                                        <h4 class="fw-bold pb-3">24 hours Room Service</h4>
+                                        <p>You have access to 24-hours a day room service at our hotel.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div>
+                                        <span><img src="./images/coffee.svg" class="img-fluid" alt=""></span>
+                                        <h4 class="fw-bold pb-3">Restaurant and Bars</h4>
+                                        <p>You have access to the world state of art restaurants and bars at our hotel
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div>
+                                        <span><img src="./images/database.svg" class="img-fluid" alt=""></span>
+                                        <h4 class="fw-bold pb-3">Fitness and Spa</h4>
+                                        <p>Access to fitness and Spa is part of our hotel package when you make a
+                                            booking.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div>
+                                        <span><img src="./images/wifi.svg" class="img-fluid" alt=""></span>
+                                        <h4 class="fw-bold pb-3">Free Wi-Fi Access</h4>
+                                        <p>You have access to 24-hours free Wi-Fi services irrespective of any room.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="enjoy-img">
+                                <img src="./images/video link.webp" class="img-fluid" alt="">                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Simplicity Section-->
+        <section class="simplicity">
+            <div class="container pb-5">
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <div class="container text-center pb-5 px-lg-5">
+                            <h2 class="fw-bold fs-1">Simplicity Is The Ultimate
+                                Watchword</h2>
+                            <hr class="text-warning text-center w-75">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 pe-lg-5">
+                            <div class="row">
+                                <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+                                    <div><img src="./images/hotel-1.webp" class="small-img img-fluid d-none d-sm-block"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+                                    <div><img src="./images/hotel-2.webp" class="small-img img-fluid d-none d-sm-block"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+                                    <div><img src="./images/hotel-3.webp" class="small-img img-fluid d-none d-sm-block"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ab"></div>
+                            <div class="row">
+                                <div class="col-12 col-md-8 col-lg-8">
+                                    <div><img src="./images/hotel-4-large.webp" class="large-img img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12  col-md-4 col-lg-4">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="col-12">
+                                                <div><img src="./images/hotel-5.webp" class="small-img img-fluid d-none d-sm-block"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="ab"></div>
+                                            <div class="col-12">
+                                                <div><img src="./images/hotel-6.webp" class="small-img img-fluid d-none d-sm-block"
+                                                        alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="container">
+                                <div>
+                                    <p>The fact that we are run by hospitality professionals
+                                        and equipped with the world best interior designers
+                                        is why our rooms and suites are second to none in
+                                        the universe</p>
+                                    <menu class="room-list lh-lg pb-2">
+                                        <li class="mb-2"><img src="./images/check-square.svg" alt=""> Standard Room</li>
+                                        <li class="mb-2"><img src="./images/check-square.svg" alt=""> Executive Room
+                                        </li>
+                                        <li class="mb-2"><img src="./images/check-square.svg" alt=""> King Suite</li>
+                                    </menu>
+                                    <div class="text-center text-sm-start">
+                                        <button type="button"
+                                        class="book-now rounded-2 px-4 py-2 border border-0">BOOK
+                                        NOW</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Testimonials Section-->
+        <section class="client-reviews">
+            <div class="container px-lg-5 pb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center pb-3">
+                            <h2 class="fs-1 fw-bold">Client Reviews</h2>
+                            <hr class="text-warning text-center w-75">
+                            <p class="fw-semibold">We are very proud of the services we offer to our customers.
+                                <br>
+                                Read every word from our happy customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="container">
+                                <div class="text-center text-sm-start">
+                                    <figure class="border border-1 rounded-2 border-black p-3">
+                                        <img src="./images/customer1.webp" class="img-fluid pt-4 pb-4" alt="">
+                                        <figcaption>
+                                            <h3 class="fw-bold">Mark Essein</h3>
+                                            <h5 class="fw-semibold pb-3">Lagos, Nigeria.</h5>
+                                            <p class="fw-medium">Words can't explain the kind of treatment I received
+                                                from the management
+                                                of star hotels. They are the best in the country.</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="container">
+                                <div class="text-center text-sm-start">
+                                    <figure class="border border-1 rounded-2 border-black p-3">
+                                        <img src="./images/customer2.webp" class="img-fluid pt-4 pb-4" alt="">
+                                        <figcaption>
+                                            <h3 class="fw-bold">Seyi Onifade</h3>
+                                            <h4 class="fw-semibold pb-3">Lagos, Nigeria</h4>
+                                            <p class="fw-medium">Star hotels makes you feel the best room quality that
+                                                makes you feel the comfort of a home.</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="container">
+                                <div class="text-center text-sm-start">
+                                    <figure class="border border-1 rounded-2 border-black p-3">
+                                        <img src="./images/customer3.webp" class="img-fluid pt-4 pb-4" alt="">
+                                        <figcaption>
+                                            <h3 class="fw-bold">Fayemi David</h3>
+                                            <h4 class="fw-semibold pb-3">Lagos, Nigeria</h4>
+                                            <p class="fw-medium">My Family and I are very happy when we lodge into star
+                                                hotels. They are by far the best in the universe.</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer-section text-white p-2 pt-4 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="container">
+                            <div class="star-hotel pb-5 mb-lg-5">
+                                <h3 class="fw-bold mb-4">Star Hotels</h3>
+                                <p>Hospitality and Comfort are our watchwords</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="container">
+                            <div class="contact-section pb-5 mb-lg-5">
+                                <h3 class="fw-bold mb-4">Contact Us</h3>
+                                <menu class="contact-list">
+                                    <li>
+                                        <address>
+                                            <a href="https://maps.app.goo.gl/ynWjgmuVuRCo2qNe7"
+                                                class="text-decoration-none text-white">
+                                                <img src="./images/map-pin.svg" alt=""> <span class="ps-1"> 23, Fola
+                                                    Osibo,
+                                                    Lekki Phase 1</span>
+                                            </a>
+                                        </address>
+                                    </li>
+                                    <li class="pb-3">
+                                        <a href="tel:+08185956620" class="text-decoration-none text-white">
+                                            <img src="./images/phone.svg" alt=""> <span class="ps-1"> 08185956620</span>
+                                        </a>
+                                    </li>
+                                    <li class="pb-3">
+                                        <a href="mailto:support@starhotels.com" class="text-decoration-none text-white">
+                                            <img src="./images/mail.svg" alt=""> <span class="ps-1">
+                                                support@starhotels.com</span>
+                                        </a>
+                                    </li>
+                                </menu>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="container">
+                            <h3>Follow Us</h3>
+                            <div class="social-media">
+                                <a class="" href="">
+                                    <img src="./images/facebook.svg" class="me-2" alt=""></a>
+                                <a class="" href="">
+                                    <img src="./images/twitter.svg" class="me-2" alt=""></a>
+                                <a class="" href="">
+                                    <img src="./images/instagram.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
